@@ -7,11 +7,12 @@ function App() {
   const [location, setLocation] = useState("Tashkent");
   const { data, loading } = useFeach(location);
   const now = new Date();
-
+  const [value,setValue] = useState("");
 
   let sendData = (e) => {
     if (e.code === "Enter") {
       setLocation(e.target.value);
+      setValue("");
     }
   }
 
@@ -61,6 +62,7 @@ function App() {
             type="text"
             placeholder="Search..."
             className="search"
+            value={(e)=>setValue(e.target.value)}
             onKeyUp={sendData}
           />
         </div>
