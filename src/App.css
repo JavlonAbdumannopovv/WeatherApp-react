@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition:all .4s ease;
+}
+
+.App {
+  width: 1440px;
+  margin: auto !important;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Imgs/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  padding:50px;
+  border-radius: 30px;
+  z-index: 99;
+}
+
+.back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 800px;
+  background: #fff;
+  opacity: 0.4;
+  z-index: 2;
+  border-radius: 30px;
+}
+
+body {
+  background: #000;
+}
+
+.search{
+  border:none;
+  outline:none;
+  width:500px;
+  height:76px;
+  border-radius:30px 0 30px;
+  border-bottom:5px solid lightblue;
+  padding:0 20px;
+  font-size:25px;
+}
+
+.loading{
+  width:500px;
+  height:auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.location{
+  font-size:40px;
+  margin:50px 0 10px 0;
+  font-weight:600;
+}
+
+.date{
+  font-size:20px;
+  font-weight:500;
+}
+
+.temp{
+  font-size:170px;
+  margin:40px 0 0 ;
+}
+
+.weather_main{
+  font-size:35px;
+  font-weight:600;
+  margin:0 0 20px;
+}
+
+.temp_min-max{
+  font-size:30px;
+  font-weight:25px;
+}
