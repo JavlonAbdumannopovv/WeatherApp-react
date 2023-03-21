@@ -12,8 +12,8 @@ function App() {
   let sendData = (e) => {
     if (e.code === "Enter") {
       setLocation(e.target.value);
+      e.target.value="";
     }
-
   }
 
   function dateBuilder(now) {
