@@ -6,13 +6,14 @@ import loadinglogo from "./Imgs/loading.gif";
 function App() {
   const [location, setLocation] = useState("Tashkent");
   const { data, loading } = useFeach(location);
+  const [value,setValue] = useState("");
   const now = new Date();
 
 
   let sendData = (e) => {
     if (e.code === "Enter") {
       setLocation(e.target.value);
-      e.target.value="";
+      setValue("");
     }
   }
 
@@ -61,6 +62,7 @@ function App() {
           <input
             type="text"
             placeholder="Search..."
+            value={value}
             className="search"
             onKeyUp={sendData}
           />
